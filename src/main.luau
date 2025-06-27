@@ -22,5 +22,5 @@ print(
 		.. "\n"
 		.. " [here]"
 		.. `(https://rugplay.com/coin/{responseBody["coin"]["symbol"]}) \n`
-		.. "because this message was generated with [this neat little program]()"
+		.. "because this message was generated with [this neat little program](https://github.com/noyd3v/rugplay-coin-plug-maker)"
 )

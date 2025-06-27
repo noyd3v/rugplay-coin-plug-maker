@@ -20,15 +20,6 @@ local params: net.FetchParams = {
 }
 local response = net.request(params)
 local responseBody = net.jsonDecode(response.body)
-
---[[print(
-	"#Buy "
-		.. responseBody["coin"]["name"]
-		.. "\n"
-		.. " [here]"
-		.. `(https://rugplay.com/coin/{responseBody["coin"]["symbol"]}) \n`
-		.. "because this message was generated with [this neat little program](https://github.com/noyd3v/rugplay-coin-plug-maker)"
-		)]]
 writeInArrays({
 	"#Buy ",
 	responseBody["coin"]["name"],
